@@ -7,6 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Form for the registration to our hotel</h1>
+    <form action="https://formspree.io/rezvanovgr@gmail.com"
+      method="Post">
+    <label>NAME<input type="text" placeholder="Your name" required></label><br>
+    <label>SURNAME<input type="text" placeholder="Your surname" required></label><br>
+    <label>EMAIL<input type="email" placeholder="Your email" required></label><br>
+  <label>TYPE OF THE ROOM<input type="radio" name="indoor-outdoor" checked> No smoking</label>
+  <label><input type="radio" name="indoor-outdoor"> smoking</label><br>
+  
+  <label>
+Facilities<input type="checkbox" name="personality" checked> balcony</label>
+  <label><input type="checkbox" name="personality"> TV</label>
+  <label><input type="checkbox" name="personality"> breakfast</label><br>
+  <label>Passport:<input type="text"
+  name="passport"
+  required
+  pattern="[А-Я]{2}[0-9]{6}"
+  title="AA123456"></label><br>
+  
+  <p>Write here about floor</p>
+  <select id="groups" name="groups">
+  <optgroup label="floor">
+    <option>1</option>
+    <option selected>2</option>
+    <option>3</option>
+  </optgroup>
+  
+</select><br>
+ <label>Write your wishes<br> <textarea cols="30" rows="10" place holder="write here"></textarea>
+  
+  
+  
+  <button type="submit">Submit</button>
+</form>
 </body>
 </html>
